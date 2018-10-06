@@ -7,9 +7,16 @@
 //
 
 #include <iostream>
+#include "action_recognition.h"
+#include <QtWidgets/QApplication>
+#include <QTextcodec.h>
 
-int main(int argc, const char * argv[]) {
-    // insert code here...
-    std::cout << "try the second time\n";
-    return 0;
+using namespace std;
+int main(int argc, char *argv[])
+{
+    QTextCodec *gbk = QTextCodec::codecForName("GBK");
+    QApplication a(argc, argv);
+    action_recognition w;
+    w.show();
+    return a.exec();
 }

@@ -8,6 +8,10 @@
 
 /* Begin PBXBuildFile section */
 		6F795F7C216878FB0090F5CA /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 6F795F7B216878FB0090F5CA /* main.cpp */; };
+		6F795F8C21687AD60090F5CA /* action_recognition.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 6F795F8A21687AD60090F5CA /* action_recognition.cpp */; };
+		6F795F8F21687B280090F5CA /* util.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 6F795F8D21687B280090F5CA /* util.cpp */; };
+		6F795F9221687B4E0090F5CA /* Vibe.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 6F795F9021687B4E0090F5CA /* Vibe.cpp */; };
+		6F795F9521687B6C0090F5CA /* ZernikeMoment.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 6F795F9321687B6C0090F5CA /* ZernikeMoment.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -25,6 +29,15 @@
 /* Begin PBXFileReference section */
 		6F795F78216878FB0090F5CA /* mac_action_recognition */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = mac_action_recognition; sourceTree = BUILT_PRODUCTS_DIR; };
 		6F795F7B216878FB0090F5CA /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
+		6F795F8421687A140090F5CA /* action_recognition.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = action_recognition.h; sourceTree = "<group>"; };
+		6F795F8521687A460090F5CA /* CvHMM.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CvHMM.h; sourceTree = "<group>"; };
+		6F795F8621687A6F0090F5CA /* util.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = util.h; sourceTree = "<group>"; };
+		6F795F8721687A820090F5CA /* Vibe.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Vibe.h; sourceTree = "<group>"; };
+		6F795F8821687AA40090F5CA /* ZernikeMoment.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZernikeMoment.h; sourceTree = "<group>"; };
+		6F795F8A21687AD60090F5CA /* action_recognition.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = action_recognition.cpp; sourceTree = "<group>"; };
+		6F795F8D21687B280090F5CA /* util.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = util.cpp; sourceTree = "<group>"; };
+		6F795F9021687B4E0090F5CA /* Vibe.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Vibe.cpp; sourceTree = "<group>"; };
+		6F795F9321687B6C0090F5CA /* ZernikeMoment.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = ZernikeMoment.cpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,9 +70,34 @@
 		6F795F7A216878FB0090F5CA /* mac_action_recognition */ = {
 			isa = PBXGroup;
 			children = (
+				6F795F8921687AB40090F5CA /* Source */,
+				6F795F83216879ED0090F5CA /* Header */,
 				6F795F7B216878FB0090F5CA /* main.cpp */,
 			);
 			path = mac_action_recognition;
+			sourceTree = "<group>";
+		};
+		6F795F83216879ED0090F5CA /* Header */ = {
+			isa = PBXGroup;
+			children = (
+				6F795F8421687A140090F5CA /* action_recognition.h */,
+				6F795F8521687A460090F5CA /* CvHMM.h */,
+				6F795F8621687A6F0090F5CA /* util.h */,
+				6F795F8721687A820090F5CA /* Vibe.h */,
+				6F795F8821687AA40090F5CA /* ZernikeMoment.h */,
+			);
+			path = Header;
+			sourceTree = "<group>";
+		};
+		6F795F8921687AB40090F5CA /* Source */ = {
+			isa = PBXGroup;
+			children = (
+				6F795F8A21687AD60090F5CA /* action_recognition.cpp */,
+				6F795F8D21687B280090F5CA /* util.cpp */,
+				6F795F9021687B4E0090F5CA /* Vibe.cpp */,
+				6F795F9321687B6C0090F5CA /* ZernikeMoment.cpp */,
+			);
+			path = Source;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -118,7 +156,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6F795F9521687B6C0090F5CA /* ZernikeMoment.cpp in Sources */,
 				6F795F7C216878FB0090F5CA /* main.cpp in Sources */,
+				6F795F8C21687AD60090F5CA /* action_recognition.cpp in Sources */,
+				6F795F8F21687B280090F5CA /* util.cpp in Sources */,
+				6F795F9221687B4E0090F5CA /* Vibe.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
